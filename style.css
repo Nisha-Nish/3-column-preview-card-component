@@ -1,0 +1,107 @@
+/* @import url("https://fonts.googleapis.com/css2?family=Lexend+Deca&display=swap"); */
+
+@import url("https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Lexend+Deca&display=swap");
+:root {
+    --font: "Big Shoulders Display", cursive;
+    --font1: "Lexend Deca", sans-serif;
+    --orange: hsl(31, 77%, 52%);
+    --dark-cyan: hsl(184, 100%, 22%);
+    --very-dark-cyan: hsl(179, 100%, 13%);
+    --trans-white: hsla(0, 0%, 100%, 0.75);
+    --light-gray: hsl(0, 0%, 95%);
+}
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+.f-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.orange {
+    background: var(--orange);
+}
+
+.cyan {
+    background: var(--dark-cyan);
+}
+
+.dark-cyan {
+    background: var(--very-dark-cyan);
+}
+
+.container {
+    min-height: 100vh;
+    background: var(--light-gray);
+}
+
+.card-container {
+    width: 750px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    overflow: hidden;
+    border-radius: 0.4rem;
+}
+
+.card-container .card {
+    padding: 2rem;
+}
+
+.card-container .card img {
+    height: 2rem;
+}
+
+.card-container .card h1 {
+    color: var(--light-gray);
+    padding: 1rem 0;
+    font-family: var(--font);
+    text-transform: uppercase;
+}
+
+.card-container .card p {
+    font-size: 0.8rem;
+    font-family: var(--font1);
+    color: var(--trans-white);
+    padding: 1rem 0;
+    line-height: 2;
+}
+
+.card-container .card button {
+    padding: 0.7rem 1.5rem;
+    margin: 1rem 0;
+    margin-top: 3rem;
+    border-radius: 1.5rem;
+    border: 1px solid var(--light-gray);
+    background: var(--light-gray);
+    mix-blend-mode: screen;
+    font-family: var(--font1);
+    font-weight: bold;
+}
+
+.card-container .card button:hover {
+    border: 1px solid var(--light-gray);
+    color: var(--light-gray);
+    background: transparent;
+    cursor: pointer;
+    font-weight: normal;
+}
+
+@media only screen and (max-width: 768px) {
+    .card-container {
+        grid-template-columns: 1fr;
+        width: 80%;
+        margin: 5rem auto;
+    }
+    .card-container .card {
+        padding: 3rem;
+    }
+    .card-container .card button {
+        margin: 0;
+        margin-top: 0.5rem;
+    }
+}
