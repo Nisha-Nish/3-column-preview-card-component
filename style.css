@@ -78,7 +78,6 @@
     background: var(--light-gray);
     mix-blend-mode: screen;
     font-family: var(--font1);
-    font-weight: bold;
 }
 
 .card-container .card button:hover {
@@ -86,7 +85,6 @@
     color: var(--light-gray);
     background: transparent;
     cursor: pointer;
-    font-weight: normal;
 }
 
 @media only screen and (max-width: 768px) {
